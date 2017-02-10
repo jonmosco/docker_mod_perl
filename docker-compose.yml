@@ -1,0 +1,8 @@
+hurshfilms:
+  image: centos:7
+  ports:
+    - 8080:80
+  environment:
+  volumes:
+    - /Users/jmosco/mnt/:/var/www/html
+    - ./hurshfilms.conf:/etc/httpd/conf.d/hurshfilms.conf
